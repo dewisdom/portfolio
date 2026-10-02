@@ -1,0 +1,395 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(12, 12, 117);
+  padding-top: 200px;
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background-color: rgb(3, 3, 99);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+}
+
+.circle-icon {
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.material-symbols-outlined {
+  font-size: 50px !important;
+}
+
+header button,
+.footer button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 40px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.design-text {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.experience-text {
+  max-width: 700px;
+  margin: auto;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: rgb(247, 244, 244);
+  line-height: 1.5;
+}
+
+.cards {
+  width: 1000px;
+  height: 500px;
+  margin-top: 60px;
+  margin-left: 200px;
+  display: grid;
+  grid-template-columns: 398px 210px 210px 398px;
+  grid-template-rows: 300px 220px;
+  gap: 25px;
+  grid-template-areas:
+    "graphic uiux apps photography"
+    "graphic illustrations illustrations motion";
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.graphic {
+  grid-area: graphic;
+}
+
+.uiux {
+  grid-area: uiux;
+}
+
+.apps {
+  grid-area: apps;
+}
+
+.photography {
+  grid-area: photography;
+}
+
+.illustrations {
+  grid-area: illustrations;
+}
+
+.motion {
+  grid-area: motion;
+}
+
+.profile-section {
+  max-width: 1100px;
+  margin: 150px auto 0;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.pfp {
+  width: 450px;
+  border-radius: 50%;
+  display: block;
+}
+
+.about-me {
+  flex: 1;
+}
+
+.paragraph-one {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.paragraph-two {
+  color: rgb(228, 225, 235);
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.consult-button {
+  height: 55px;
+  width: 250px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  color: white;
+  background-color: rgba(19, 64, 212, 0.5);
+  border: none;
+  cursor: pointer;
+}
+
+.about-work {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-top: 180px;
+}
+
+.work-images {
+  max-width: 1300px;
+  margin: 50px auto 0;
+  display: flex;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.blue-img {
+  width: calc(33.333% - 14px);
+  border-radius: 10px;
+}
+
+.forward-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.forward-buttons {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forward-button span {
+  font-size: 25px !important;
+}
+
+.button-box {
+  max-width: 900px;
+  min-height: 300px;
+  margin: 100px auto 50px;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.book-call {
+  width: 70%;
+}
+
+.box-paragraph {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 25px;
+}
+
+.writeup {
+  width: 450px;
+  color: rgb(176, 181, 185);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+}
+
+.free {
+  width: 30%;
+}
+
+.footer {
+  height: 150px;
+  background-color: rgb(12, 12, 117);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+@media (max-width: 1100px) {
+
+  .cards {
+    width: calc(100% - 60px);
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  }
+
+  .profile-section {
+    gap: 40px;
+  }
+
+  .pfp {
+    width: 40vw;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  body {
+    padding-top: 200px;
+
+  }
+
+  .header {
+    height: 100px;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  .circle-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .material-symbols-outlined {
+    font-size: 38px !important;
+  }
+
+  header button,
+  .footer button {
+    width: 160px;
+    height: 45px;
+  }
+
+  .design-text {
+    font-size: 38px;
+    padding: 0 20px;
+  }
+
+  .experience-text {
+    font-size: 17px;
+    padding: 0 25px;
+  }
+
+  .cards {
+    width: calc(100% - 40px);
+    height: auto;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 250px);
+    grid-template-areas:
+      "graphic"
+      "uiux"
+      "apps"
+      "photography"
+      "illustrations"
+      "motion";
+  }
+
+  .profile-section {
+    margin-top: 100px;
+    padding: 0 25px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pfp {
+    width: min(80vw, 350px);
+  }
+
+  .paragraph-one {
+    font-size: 38px;
+    margin-bottom: 25px;
+  }
+
+  .paragraph-two {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .consult-button {
+    width: 220px;
+    height: 50px;
+    font-size: 17px;
+  }
+
+  .about-work {
+    font-size: 38px;
+    margin-top: 100px;
+  }
+
+  .work-images {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .blue-img {
+    width: 100%;
+  }
+
+  .button-box {
+    width: calc(100% - 40px);
+    margin: 70px auto 40px;
+    padding: 35px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .book-call,
+  .free {
+    width: 100%;
+  }
+
+  .writeup {
+    width: 100%;
+  }
+
+  .free .consult-button {
+    width: 100%;
+  }
+
+  .footer {
+    height: 120px;
+    padding: 0 20px;
+  }
+
+}
+```
